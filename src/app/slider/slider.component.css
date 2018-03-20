@@ -1,0 +1,16 @@
+.w-40 {
+    width: 40% !important;
+}
+.carousel-inner {
+    margin: auto;
+}
+.carousel-control-prev-icon {
+    background-image: url('/assets/brand/Arrow-l.png');
+    width: 60px;
+    height: 115px;
+}
+.carousel-control-next-icon {
+    background-image: url('/assets/brand/Arrow-r.png');
+    width: 60px;
+    height: 115px;
+}
