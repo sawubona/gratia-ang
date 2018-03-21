@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
+
 export class NavComponent {
 
   links = [{ link: '#', name: 'About', id: 'about' },
@@ -13,7 +14,5 @@ export class NavComponent {
   { link: '#', name: 'Contact', id: 'contact' }];
 
   constructor() { }
-
-  
 
 }
