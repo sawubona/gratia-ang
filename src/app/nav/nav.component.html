@@ -4,17 +4,8 @@
       <img src="/assets/brand/gratia-logo.png" width="30" height="30" class="d-inline-block align-top mr-2" alt=""> Gratia
     </a>
     <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link p-4 m-3" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link p-4 m-3" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link p-4 m-3" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link p-4 m-3" href="#">Disabled</a>
+      <li class="nav-item" *ngFor="let link of links">
+        <a class="nav-link p-4 m-3" id='{{link.id}}' href="{{link.link}}">{{link.name}}</a>
       </li>
     </ul>
   </nav>
