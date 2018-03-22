@@ -15,9 +15,11 @@
     height: 115px;
 }
 .carousel-indicators {
+  position: relative;
   flex-direction: column;
-  margin-left: 0;
+  margin: 0;
   padding-left: 1rem;
+  bottom: 0;
 }
 .carousel-indicators li {
   text-indent: 0;
@@ -38,4 +40,9 @@
 }
 .carousel-indicators li.active {
   border-bottom: 2px solid #d89b64;
+}
+.btn-outline-primary {
+  border-radius: 0;
+  border-color: #fff;
+  margin-right: 1rem;
 }

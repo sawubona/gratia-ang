@@ -1,16 +1,5 @@
 <div class="row justify-content-center">
   <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-        <a href="">01</a>
-      </li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1">
-        <a href="">02</a>
-      </li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2">
-        <a href="">03</a>
-      </li>
-    </ol>
     <div class="carousel-inner w-50">
       <div class="{{'carousel-item'+ setActiveSlide(i)}}" *ngFor="let slide of slides; let i = index">
         <img class="d-block w-100" src="{{slide.img_link}}" alt="{{slide.name}}">
@@ -24,5 +13,21 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+            <a href="">01</a>
+          </li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">
+            <a href="">02</a>
+          </li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2">
+            <a href="">03</a>
+          </li>
+        </ol>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+      </div>
+    </div>
   </div>
 </div>
